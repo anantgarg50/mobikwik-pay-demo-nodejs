@@ -1,0 +1,26 @@
+{
+  "name": "mobikwik-pay-demo-nodejs",
+  "version": "1.0.0",
+  "description": "A simple MobiKwik Pay demo in Node.js (express.js)",
+  "main": "./bin/www",
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon -r dotenv/config ./bin/www"
+  },
+  "repository": "git@github.com:anantgarg50/mobikwik-pay-demo-nodejs.git",
+  "author": "Anant Garg <anantgarg50@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "http-errors": "^1.7.2",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "dotenv": "^7.0.0",
+    "eslint": "^5.15.3",
+    "nodemon": "^1.18.10"
+  }
+}
