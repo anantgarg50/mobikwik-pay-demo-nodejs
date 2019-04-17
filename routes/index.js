@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
     currency: 'INR',
     merchantIdentifier: config.mobikwikMerchantID,
     orderId: new Date().getTime(),
-    returnUrl: 'http://localhost:5000/response',
+    returnUrl: config.mobikwikReturnURL,
     transactionAmount: Number(100 / 100).toFixed(2)
   });
 });
