@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mobikwik Pay</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+
+  <script type="text/javascript">
+    function submitForm() {
+      var form = document.forms[0];
+      form.submit();
+    }
+  </script>
+</head>
+
+<body onload="javascript:submitForm()">
+  <div>
+    <h2 class="align-center">Do Not Refresh or Press Back Button!</h2>
+    <p class="align-center">Redirecting to Mobikwik Payment Gateway...</p>
+  </div>
+  <div>
+    <form action="<%=formSubmitURL%>" method="POST">
+      <% for(var key in data) { %>
+      <input type="hidden" name="<%=key%>" value="<%=data[key]%>" />
+      <% } %>
+      <input type="hidden" name="checksum" value="<%=checksum%>" />
+    </form>
+  </div>
+</body>
+
+</html>

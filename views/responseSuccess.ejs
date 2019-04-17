@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mobikwik Pay</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+
+</head>
+
+<body>
+  <div>
+    <h2 class="align-center">Payment Success!</h2>
+    <p class="align-center text-success">Your transaction for amount
+      <strong><%= String.fromCharCode(8377) %><%= amount %></strong> is Successful!</p>
+
+    <p class="align-center">Transaction ID : &nbsp;&nbsp; <strong><%= txnId %></strong></p>
+  </div>
+
+  <div class="flex-container flex-justify-content-center">
+    <button class="button-primary flat-button white-button-text">Continue</button>
+  </div>
+
+  <p class="align-center info-text">Please note down the Transaction ID for future reference.</p>
+</body>
+
+</html>
